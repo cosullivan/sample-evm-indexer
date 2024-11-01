@@ -1,0 +1,23 @@
+{
+  "name": "sample-evm-indexer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "yarn clean && node build.js",
+    "test": "yarn build && ts-node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@types/node-fetch": "^2.6.11",
+    "ethers": "^6.13.1",
+    "node-fetch": "^3.3.2",
+    "esbuild": "^0.23.0",
+    "esbuild-node-externals": "^1.14.0"
+  }
+}
